@@ -1,1 +1,10 @@
-# Typeface.ai.
+ Design document on how to crawl a website site and save the images and text from the website:
+
+The basic steps to build a crawler:
+
+Step 1: Add one or several URLs to be visited.
+Step 2: Pop a link from the URLs to be visited and add it to the Visited URLs thread.
+Step 3: Fetch the  page’s content and scrape the data you’re interested in with the ScrapingBot API. 
+Step 4: Parse all the URLs present on the page, and add them to the URLs to be visited if they match the rules you’ve set and don’t match any of the Visited URLs. 
+Step 5: Repeat steps 2 to 4 until the URLs to be visited list is empty. 
+
